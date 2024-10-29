@@ -1,0 +1,101 @@
+.overall {
+    width: 100%; /* Make width more flexible */
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #595b5c;
+    padding: 0;
+  }
+  
+  /* Responsive logo */
+  .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  .logo h2 {
+    color: #040f16;
+    font-size: 1.5em;
+  }
+  .linkbar {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  .linkbar a{
+    text-decoration: none;
+    color: #68100d;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }.linkbar a:hover{
+    color: white;
+}.services {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .intro h2 {
+    color: #68100d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    padding-top: 20px;
+  }
+  
+  .intro h3 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+  
+  /* Responsive flex layout */
+  .serv {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  button.servic {
+    background-color: #040f16;
+    color: aliceblue;
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.7s;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  button.servic:hover {
+    background-color: #68100d;
+  }
+  
+  button.more {
+    cursor: pointer;
+    background-color: #040f16;
+    border: solid 2px aliceblue;
+    height: 30px;
+    width: 90px;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  button.more:hover {
+    background-color: #68100d;
+    border: solid 2px #040f16;
+  }@media (max-width: 768px) {
+
+  
+    .linkbar a {
+      font-size: 1em; /* Adjust link sizes */
+    }
+  }

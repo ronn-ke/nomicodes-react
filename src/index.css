@@ -1,0 +1,248 @@
+.overall {
+    width: 100%; /* Full width */
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #595b5c;
+    padding: 0;
+}
+.header{
+  position: sticky;
+}
+
+/* Responsive logo */
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.logo h2 {
+  color: #040f16;
+  font-size: 1.5em;
+}
+.linkbar {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.linkbar a{
+  text-decoration: none;
+  color: #68100d;
+  font-size: 1.2em;
+  margin-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}.linkbar a:hover{
+  color: white;
+}.logo{
+  display: flex;
+  align-items: center;
+}
+.image img {
+  width: 100%; /* Let the image take the full width of its container */
+  max-width: 400px; /* Set a max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+ 
+}
+.header2 {
+  text-align: center; 
+  background-color: #dde0e2;
+}
+.abt {
+  text-align: center;
+}
+.about {
+  background-color: #dde0e2;
+  padding: 20px;
+}
+
+.about h2 {
+  color: #68100d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+}
+
+.about h4 {
+  color: #040f16;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+/* Adjust flex layout for smaller screens */
+.goal {
+  display: flex;
+  flex-direction: column; /* Stack items on smaller screens */
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+
+button.consult {
+  background-color: #68100d;
+  border: none;
+  height: 40px;
+  width: 80%;
+  max-width: 200px;
+  min-width: 120px;
+  border-radius: 30px;
+  color: black;
+  font-size: 1em;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+button.consult:hover {
+  background-color: aliceblue;
+}
+
+.about h3 {
+  color: #68100d;
+  text-align: center;
+}
+
+.services {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro h2 {
+  color: #68100d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+  padding-top: 20px;
+}
+
+.intro h3 {
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+/* Responsive flex layout */
+.serv {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+button.servic {
+  background-color: #040f16;
+  color: aliceblue;
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.7s;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button.servic:hover {
+  background-color: #68100d;
+}
+
+button.more {
+  cursor: pointer;
+  background-color: #040f16;
+  border: solid 2px aliceblue;
+  height: 30px;
+  width: 90px;
+  color: white;
+  transition: 0.5s;
+}
+
+button.more:hover {
+  background-color: #68100d;
+  border: solid 2px #040f16;
+}
+.row{
+  color: #040f16;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.row h3{
+  font-size: 1.2em;
+  color: #68100d;
+}
+.row h4{
+  font-size: 1em;
+  color: #040f16; 
+  font-weight: lighter; 
+}
+.footer-qlinks a{
+  color: #040f16;
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  font-size: 1em;
+  transition: 0.5s;
+}
+.footer-qlinks a:hover{
+  color: #68100d;
+}.footer-slinks a{
+  color: #040f16;
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  font-size: 1em;
+  transition: 0.5s;
+}.footer-slinks a:hover{
+  color: #68100d;
+}
+
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .goal {
+      flex-direction: column;
+      margin: 0;
+  }
+  .image img{
+    max-width: 20px;
+  }
+  .row{
+    flex-direction: column;
+    margin: center;
+  }
+
+  .serv {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  button.consult {
+      width: 90%;
+      font-size: 0.9em;
+  }
+  
+ .linkbar a {
+      font-size: 1em; /* Adjust link sizes */
+    }
+  
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+      font-size: 1.2em;
+  }
+  .image img {
+    max-width: 15px;
+  }
+  button.consult {
+      width: 100%;
+      font-size: 0.8em;
+      height: 35px;
+  }
+}

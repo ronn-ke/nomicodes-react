@@ -1,0 +1,108 @@
+.overall {
+    width: 100%; /* Make width more flexible */
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #595b5c;
+    padding: 0;
+  }
+  .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  .logo h2 {
+    color: #040f16;
+    font-size: 1.5em;
+  }
+  .linkbar {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .linkbar a{
+    text-decoration: none;
+    color: #68100d;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }.linkbar a:hover{
+    color: white;
+}
+.abt {
+    text-align: center;
+  }
+  .abot {
+    background-color: #ecedee;
+    padding: 20px;
+  }
+  
+  .abot h2 {
+    color: #68100d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+  }
+  
+  .abot h4 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+  
+  /* Adjust flex layout for smaller screens */
+  .goal {
+    display: flex;
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  button.consult {
+    background-color: #68100d;
+    border: none;
+    height: 40px;
+    width: 80%;
+    max-width: 200px;
+    min-width: 120px;
+    border-radius: 30px;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+  button.consult:hover {
+    background-color: aliceblue;
+  }
+  .abot h3 {
+    color: #68100d;
+    text-align: center;
+    padding-bottom: 20px;
+  }@media (max-width: 768px) {
+
+  
+    .linkbar a {
+      font-size: 1em; /* Adjust link sizes */
+    }
+    .consult{
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }@media (max-width:480px){
+    button.send {
+      width: 90%;
+    }
+    .consult{
+      width: 100%;
+      font-size: 0.8em;
+      height: 35px;
+    }
+  }
