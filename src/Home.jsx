@@ -1,10 +1,14 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import logoNT from './images/logoNT.jpg';
 import image from './images/image.jpg';
 import './index.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Home() {
+   
+    
   return (
     <section className='overall'>
         <section className='header'>

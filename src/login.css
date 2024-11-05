@@ -1,54 +1,63 @@
-.login{
-    border: none;
-    border-radius: 10px;
-    background-color: #68100d;
-    width: 40%;
-    color: #595b5c;
-}h2{
-    text-align: center;
-    color: rgb(47, 219, 162);
+/* Centering just the form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
 }
-.log{
-   margin: 10px;
-   text-align: left;
 
-}.log1{
-    margin: 10px;
-    text-align: start;
-}label{
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}input{
-    width: 40%;
-    height: 30px;
-    border-radius: 5px;
-    border: 0.2px solid darkgray;
-    margin-bottom: 10px;
-}
-.btn-login{
-    width: 20%;
-    height: 35px;
+/* Styling for the login form */
+.login {
+    width: 300px; /* Width of the form */
+    padding: 20px; /* Inner padding */
+    background-color: white;
     border-radius: 10px;
-    background-color: rgb(47, 219, 162);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within form */
+}
+
+/* Other input and button styles */
+.log, .log1 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input {
+    width: 100%; /* Full width of input */
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #4d86aa;
+    color: white;
     border: none;
-    color: white;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
-    transition: 0.5s;
-    margin-left: 10px;
-    
-}.btn-login:hover{
-    background-color: #595b5c;
-}h4{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    font-weight: lighter;
-    margin-left: 5px;
-    padding-bottom: 20px;
-}a{
-    color: rgb(47, 219, 162);
-    transition: 0.5s;
-}a:hover{
-    color: black;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #68100d;
+}
+
+h4 {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+h4 a {
+    color: #4d86aa;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: #68100d;
+    text-decoration: underline;
 }

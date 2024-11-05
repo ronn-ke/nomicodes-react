@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <form className='login'>
+    <form className='login-container'>
         <h2>Login</h2>
         <div className='log'>
             <label>Email</label><br></br>

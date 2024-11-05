@@ -73,6 +73,7 @@
     border-radius: 30px;
     color: black;
     font-size: 1em;
+    text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
     text-align: center;
