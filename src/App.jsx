@@ -9,7 +9,7 @@ import Signup from './Signup';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/nomicodes-react'>
     <Routes>
        
        <Route path="/" element={<Home />} />
